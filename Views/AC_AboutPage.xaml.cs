@@ -8,7 +8,10 @@ public partial class AC_AboutPage : ContentPage
 	}
     private async void LearnMore_Clicked(object sender, EventArgs e)
     {
-        // Navigate to the specified URL in the system browser.
-        await Launcher.Default.OpenAsync("https://aka.ms/maui");
+        if (BindingContext is Models.AC_About about)
+        {
+            // Navigate to the specified URL in the system browser.
+            await Launcher.Default.OpenAsync(about.MoreInfoUrl);
+        }
     }
 }
