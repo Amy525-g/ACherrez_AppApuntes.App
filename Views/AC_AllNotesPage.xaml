@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:ACherrez_AppApuntes.ViewModels"
              x:Class="ACherrez_AppApuntes.Views.AC_AllNotesPage"
-             Title="AmyCherrez_AllNotesPage">
+             Title="AmyCherrez_AllNotesPage"
+             NavigatedTo="ContentPage_NavigatedTo">
+
     <ContentPage.BindingContext>
         <viewModels:AC_NotesViewModel />
     </ContentPage.BindingContext>
